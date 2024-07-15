@@ -3,6 +3,7 @@ import Navbar from './Component/Navbar';
 import Home from './Component/Home';
 import Footer from './Component/Footer';
 import Community from './Component/Community';
+import Services from './Component/Services';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <>
     <Navbar />
     <Home />
+    <Services />
     <Community />
     <Footer />
     </>
