@@ -1,18 +1,10 @@
-body {
-    margin: 0; /* Remove default body margin */
-    height: 100vh; /* Ensure the body covers the full height */
-    background-color: black; /* Set background color to black */
-    color: white; /* Default text color to white for readability */
-    font-family: Arial, sans-serif; /* Set a default font */
-  }
-  
-  .App2 {
-    height: 100%; /* Ensure the App div covers the full height */
-    overflow-y: auto; /* Enable vertical scrolling if needed */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align items to the top */
-    white-space: nowrap; /* Prevent line breaks for horizontal scrolling */
-  }
-  
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: black;
+}
+
+div {
+    background-color: black;
+}
