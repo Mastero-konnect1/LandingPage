@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
 }
 
-.join, .email{
+.join, .email {
     flex: 1;
     padding: 10px;
     color: white;
@@ -36,17 +36,6 @@
     background-color: black;
 }
 
-@media (max-width: 600px) {
-    .container1 {
-        flex-direction: column;
-    }
-
-    .email input {
-        height: 30px;
-        object-fit: cover;
-    }
-}
-
 .submit {
     background-color: #0056b3;
     color: white;
@@ -57,14 +46,43 @@
     font-weight: bold;
     padding-left: 66px;
     padding-right: 66px;
-  }
-  
-  .submit:hover {
-    background-color: #3a91ee;
-  }
+}
 
-  .input1 {
+.submit:hover {
+    background-color: #3a91ee;
+}
+
+.input1 {
     border-radius: 5px;
-    border: 0cm;
+    border: none;
     margin-bottom: 10px;
-  }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .container1 {
+        flex-direction: column;
+        width: 90%; /* Adjust width for better mobile view */
+        padding: 10px; /* Reduce padding for smaller screens */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .join, .email {
+        width: 100%; /* Ensure full width for each section */
+        padding: 5px; /* Reduce padding for better fit */
+    }
+
+    .email input {
+        width: 100%; /* Full width for input fields */
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .submit {
+        padding-left: 20px; /* Adjust padding for buttons */
+        padding-right: 20px;
+        width: 100%; /* Full width for buttons */
+    }
+}

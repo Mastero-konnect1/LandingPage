@@ -1,24 +1,41 @@
 /* src/components/Services.css */
 
+/* General Styles */
 .services-wrapper {
-    /* padding: 20px; Adjust padding as needed */
-    background-color: black;
-    
+  padding: 20px;
+  background-color: black;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: black;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.service-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .services-wrapper {
+    padding: 10px;
   }
-  
+
   .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Adjust height as needed */
-    background-color: black; /* Example background color, adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 1200px; /* Set a max width for better control */
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .service-image {
+    width: 100%;
     max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Example styling, adjust as needed */
+    margin: 0 auto;
   }
-  
+}
