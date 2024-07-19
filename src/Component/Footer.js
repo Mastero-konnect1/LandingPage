@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='Contact'>
       <div className="footer-content">
         <div className="footer-section about">
           <h2>About Us</h2>

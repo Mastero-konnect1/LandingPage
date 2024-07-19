@@ -6,7 +6,7 @@ import serviceImage from './Services.png';
 
 const Services = () => {
   return (
-    <div className="services-wrapper">
+    <div className="services-wrapper" id='Services'>
       <div className="services-container">
         <img src={serviceImage} alt="Service" className="service-image" />
       </div>

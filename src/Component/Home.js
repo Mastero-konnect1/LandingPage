@@ -12,7 +12,7 @@ const handleButtonClick = () => {
 
 function Home() {
   return (
-    <div className='App'>
+    <div className='App' id='Home'>
     <div className="container">
       <div className="text">
         <h1 className='A1'>Join the community of <span className='C'>Experts</span> and <span className='D'>Learners</span> who are helping each other define and achieve success.</h1>
