@@ -14,7 +14,7 @@
 .logo {
   width: 180px;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 #navbar-right {
@@ -54,6 +54,7 @@
 
 #mobile {
   display: none;
+  padding-right: 20px;
 }
 
 #mobile i {
@@ -67,9 +68,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    /* color: beige; */
-    /* padding-right: 50px; */
-    /* font-weight: bold; */
     position: fixed;
     top: 90px;
     right: -300px;
@@ -77,14 +75,14 @@
     height: 100vh;
     background-color: #13133D;
     padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
   }
 
-  #navbar-right.nav-link{
-    right: 0px;
+  #navbar-right.active {
+    right: 0;
   }
 
-  #navbar-right, .nav-link{
+  .nav-link {
     margin-bottom: 25px;
   }
 
