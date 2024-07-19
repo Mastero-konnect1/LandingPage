@@ -1,57 +1,90 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-image: linear-gradient(107deg, #4D3535 0%, #4D3535 14.912280701754385%, #13133D 56.14035087719298%, #090D3E 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(107deg, #4D3535 0%, #4D3535 14.912280701754385%, #13133D 56.14035087719298%, #090D3E 100%);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  height: 50px;
+  padding-left: 50px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  color: beige;
+  padding-right: 50px;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+#H:hover {
+  color: #ec5c5c;
+}
+
+.nav-button {
+  margin-left: 20px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
   }
-  
+
   .navbar-left {
-    display: flex;
-    align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding-left: 0;
   }
-  
+
   .logo {
-    width: 180px;
-    height: 50px;
-    padding-left: 50px;
+      padding-left: 0;
   }
-  
+
   .navbar-right {
-    display: flex;
-    align-items: center;
-    color: beige;
-    padding-right: 50px;
-    font-weight: bold;
-  }
-  
-  .nav-link {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-right: 0;
   }
 
-  #H:hover{
-    color: #ec5c5c;
- }
-
+  .nav-link, .nav-button {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+  }
 
   .nav-button {
-    margin-left: 20px;
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+      margin-left: 0;
+      padding: 10px;
   }
-  
-  .nav-button:hover {
-    background-color: #0056b3;
-  }
-
-
-  
+}

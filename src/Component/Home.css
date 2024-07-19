@@ -1,72 +1,93 @@
 .App {
-    background-color: black;
+  background-color: black;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 60px);
-    width: 80%;
-    max-width: 1200px;
-    background-color: black;
-    overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  width: 80%;
+  max-width: 1200px;
+  background-color: black;
+  overflow: hidden; 
 }
 
 .text, .image {
-    flex: 1;
-    padding: 20px;
-    color: white;
+  flex: 1;
+  padding: 20px;
+  color: white;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
 }
 
 .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+      flex-direction: column;
+      width: 90%; /* Adjust width for better mobile view */
+      height: auto; /* Adjust height for mobile view */
+  }
 
-    .image img {
-        height: 300px;
-        object-fit: cover;
-    }
+  .text {
+      text-align: center; /* Center align text for better readability on mobile */
+  }
+
+  .image img {
+      height: auto;
+      max-height: 300px; /* Set a maximum height for images */
+      object-fit: cover;
+  }
 }
 
 .B {
-    margin-left: 250px;
-    /* margin-right: 150px; */
-    padding: 8px 8px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .B:hover {
-    background-color: #0056b3;
+  margin-left: 250px;
+  /* margin-right: 150px; */
+  padding: 8px 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.B:hover {
+  background-color: #0056b3;
+}
+
+.C {
+  color: #4F9CF9;
+}
+
+.D {
+  color: #E87E7E;
+}
+
+.A1 {
+  padding-bottom: 30px;
+}
+
+/* Mobile Styles for Button and Text */
+@media (max-width: 768px) {
+  .B {
+      margin-left: 0; /* Reset margin for mobile view */
+      width: 100%; /* Full width button */
+      padding: 10px; /* Adjust padding for better tap target */
   }
 
-  .C {
-    color: #4F9CF9;
+  .text, .image {
+      padding: 10px; /* Reduce padding for better fit */
   }
-  .D {
-    color: #E87E7E;
-  }
-
-  .A1 {
-    padding-bottom: 30px;
-  }
+}

@@ -46,9 +46,11 @@
     font-weight: bold;
     padding-left: 66px;
     padding-right: 66px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.submit:hover {
+.submit:hover { 
     background-color: #3a91ee;
 }
 
